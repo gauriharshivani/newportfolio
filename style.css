@@ -1,0 +1,170 @@
+/* COMMON */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 10%;
+}
+
+.navbar span{
+    color: rgb(173, 155, 235);
+}
+
+.subheadings a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-weight: 500;
+}
+
+/* ABOUT */
+
+#about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin: 50px;
+}
+
+
+.intro p{
+    font-size: 30px;
+}
+
+.intro h5{
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+button{
+    border: none;
+    background-color: rgb(173, 155, 235);
+    padding: 15px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#about img{
+    width: 35%;
+    border-radius: 50%;
+    border: 15px solid rgb(173, 155, 235);
+}
+
+/* What I do */
+
+.whatido {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 35px;
+}
+
+.dummytext {
+    margin: 20px;
+    color: #575757;
+}
+
+.dummytext h3{
+    margin: 15px 0px;
+}
+
+/* Skills */
+
+.images {
+    margin: 50px 0px;
+}
+
+.images img {
+    margin: 10px;
+    width: 80px;
+}
+
+/* Projects */
+
+.project {
+    display: flex;
+    margin: 35px 15px;
+    color: #575757;
+    flex-wrap: wrap;
+}
+
+.content{
+    width: 440px;
+    padding: 20px;
+}
+
+.projimg{
+    width: 45%;
+    padding: 30px;
+}
+
+.projimg img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+#contact h3 {
+    font-weight: lighter;
+    padding: 10px;
+}
+
+footer{
+    padding: 20px;
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+
+footer img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+#contact p, h3 {
+    color: #575757;
+}
+
+@media screen and (max-width:850px) {
+    .intro{
+        text-align: center;
+        margin-top: 15px;
+    }
+    .text{
+        grid-template-columns: auto auto;
+    }
+    .content {
+        width: 100%;
+    }
+    .projimg{
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .text{
+        grid-template-columns: auto;
+    }
+    .subheadings {
+        display: flex;
+    }
+    #about img {
+        width: 50%;
+    }
+}
